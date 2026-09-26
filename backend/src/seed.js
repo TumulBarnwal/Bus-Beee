@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const connectDB = require("./config/db.js");
 const Route = require("./models/Route.js");
 const routes = require("./data/routes.js");
