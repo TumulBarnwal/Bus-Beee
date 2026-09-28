@@ -1,3 +1,4 @@
+
 import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -12,7 +13,7 @@ function App() {
   const searchBus = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/routes/search",
+        "https://bus-beee.onrender.com/routes/search",
         {
           source: source,
           destination: destination,
@@ -31,7 +32,7 @@ function App() {
     const fetchStops = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/routes/stops/all"
+          "https://bus-beee.onrender.com/routes/stops/all"
         );
 
         console.log(response.data);
@@ -380,3 +381,4 @@ function App() {
 }
 
 export default App;
+
